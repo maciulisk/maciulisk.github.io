@@ -209,22 +209,37 @@ nav{
 }
 #philosophy{
     position: absolute;
+    width: 70%;
+    max-width: 400px;
 }
 #philosophy p{
     background-color: rgba(37, 18, 2, 0.849);
     padding: 8px 12px;
-    font-size: 1.4rem;
     text-align: center;
     margin: 2% 0;
+    width: 100%;
 }
 #philosophy p:first-child{
     letter-spacing: 0.4rem;
+    font-size: 1.2rem;
     font-family: 'Oswald', sans-serif;
 }
 #philosophy p:last-child{
     letter-spacing: 0.12rem;
     font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
+}
+@media(max-width:500px){
+    #philosophy p:first-child{
+        letter-spacing: 0.4rem;
+        font-size: 3.5vw;
+        font-family: 'Oswald', sans-serif;
+    }
+    #philosophy p:last-child{
+        letter-spacing: 0.12rem;
+        font-size: 3.6vw;
+        font-family: 'Source Sans Pro', sans-serif;
+    }       
 }
 #aboutUs{
     background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));
@@ -360,47 +375,26 @@ hr{
     max-width: 940px;
     position: relative;
     margin: 0 auto;
-    top: 44%;
+    top: 43%;
     display: flex;
     justify-content: space-between;
 }
-.arrow{
-    content: "";
-    background-color: white;
-    width: 20px;
-    height: 4px;
-    margin: 2px;
-}
 .arrowleft{
     z-index: 200;
-    padding: 20px 140px 20px 5px;
     cursor: pointer;
-}
-.arrowleft:active, .arrowright:active{
-    background-color:transparent;
-}
-.arrowleft1{
-    transform: translateY(8.5px) rotate(40deg);
-    border-top-left-radius: 6px;
-}
-.arrowleft2{
-    transform: translateY(-8.5px) rotate(-40deg);
-    border-bottom-left-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: right;
+    background-color: rgba(224, 218, 218, 0.592);
+
 }
 .arrowright{
     z-index: 200;
-    padding: 20px 5px 20px 140px;
     cursor: pointer;
+    width: 50px;
+    display: flex;
+    background-color: rgba(224, 218, 218, 0.592);
 }
-.arrowright1{
-    transform: translateY(8.5px) rotate(-40deg);
-    border-top-right-radius: 6px;
-}
-.arrowright2{
-    transform: translateY(-8.5px) rotate(40deg);
-    border-bottom-right-radius: 6px;
-}
-
 .modal span{
     color: white;
     font-size: 1.5rem;
