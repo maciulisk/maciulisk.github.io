@@ -58,6 +58,12 @@ modal.addEventListener("click", function(e) {
     body.style.overflow = "auto";
   }
 });
+modal.addEventListener("touchstart", function(e){
+  if (e.target === modal) {
+    modal.style.display = "none";
+    body.style.overflow = "auto";
+  }
+})
 
 function showPreviousImage() {
   currentImageIndex--;
