@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--1.navigacija - panaikinti telefona ir adresa, sudeti i kontaktu skilti;
+    2. po fotkemis visi kontaktai;
+    3. telefono funkcionalumas
+    4. fotkiu swipe
+    5. meniu foto uztamsinimas.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+    <title>Kavos dežutė</title>
+</head>
+<body>
+    <div id="mainframe">
+        <header>
+            <!--kaires puses logo-->
+            <div id="logo"><a href="#mainframe">
+                <p>KAVOS</p>
+                <p id="box">DĖŽUTĖ</p>
+                </a>
+            </div>
+                <!--pagrindine meniu navigacija-->
+                <div id="nav-media">
+                    <div id="mediacontainer">
+                        <a class="mediaAnchor" href="https://www.facebook.com/kavosdezute/" target="_blank"><img src="images/icons/fbpng.png" width="26px"/></a>
+                       <a class="mediaAnchor" href="https://www.instagram.com/kavosdezute/" target="_blank"><img src="images/icons/instapng.png" width="30px"/></a>
+                    </div>
+                    <nav>
+                        <div class="first-nav">
+                            <div class="nav-item"><a href="#mainframe">PAGRINDINIS</a></div>
+                            <div class="nav-item"><a href="#aboutUs">APIE MUS</a></div>
+                            <div class="nav-item"><a id="menu" href="#menufoto">MŪSŲ KAVA</a></div>
+                            <div class="nav-item"><a href="#galerija">GALERIJA</a></div>
+                            <div class="nav-item"><a href="#kontaktai">KONTAKTAI</a></div>
+                        </div>
+                        <div class="nav-mobile">
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="second-nav">
+                                <div class="nav-item2"><a href="#mainframe">PAGRINDINIS</a></div>
+                                <div class="nav-item2"><a href="#aboutUs">APIE MUS</a></div>
+                                <div class="nav-item2"><a id="menu" href="#menufoto">MŪSŲ KAVA</a></div>
+                                <div class="nav-item2"><a href="#galerija">GALERIJA</a></div>
+                                <div class="nav-item2"><a href="#kontaktai">KONTAKTAI</a></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+        </header>
+        <!--prisistatymas-->
+        <div id="content">
+            <div id="greeting">
+                <img src="images/interjeras1.jpg"/>
+                <div id="philosophy">
+                    <p>GARDŽIOS KAVOS NAMUOSE</p>
+                    <p>VISADA NUOSTABI NUOTAIKA</p>
+                </div>
+            </div>
+            <div id="aboutUs">
+                <p>MUS VERTA APLANKYTI</p>
+                <p>Kavos dėžutėje viskas daroma galvojant apie jus: pas mus galite rinktis ne tik savo mėgstamą kavos tipą, 
+                    bet ir pupeles. ​Mes jau atrinkome kelias geriausias pupelių rūšis iš viso pasaulio. 
+                    Šios rūšinės pupelės nėra maišomos, vidutiniškai skrudintos, todėl atsiveža daug savo šalies aromato. ​Pupelės 
+                    yra sumalamos tik jums užsakius, o kava paruošiama būtent pagal jūsų skonį.</p>
+                <p>Agnė ir Chris</p>           
+                <hr>
+            </div>
+    
+            <!--nuotrauku galerija-->
+            <div class="galerija" id="galerija">
+                <div class="container-img"><img  src="images/interjeras1.jpg" alt="pav"/></div>
+                <div class="container-img" id="menufoto"><img src="images/meniu.jpg" alt="kavos meniu"/></div>
+                <div class="container-img"><img  src="images/interjeras2.jpg" alt="pav" height=50px/></div>
+                <div class="container-img"><img  src="images/interjeras3.jpg" alt="pav"/></div>
+                <div class="container-img"><img  src="images/interjeras4.jpg" alt="pav"/></div>
+                <div class="container-img"><img  src="images/interjeras5.jpg" alt="pav"/></div>
+                <div class="container-img"><img  src="images/interjeras6.jpg" alt="pav"/></div>
+            <hr>
+            </div>
+            <div class="modal">
+                <div class="containerForcornerbox">
+                    <div class="close-button">
+                        <span>&times;</span>
+                    </div>
+                </div>
+                <div class="containerforarrows">
+                    <div class="arrowleft">
+                        <div class="arrow arrowleft1"></div>
+                        <div class="arrow arrowleft2"></div>    
+                    </div>
+                    <div class="arrowright">
+                        <div class="arrow arrowright1"></div>
+                        <div class="arrow arrowright2"></div>                    
+                    </div>
+                </div>
+                <div class="modal-content">
+                <img src="images/interjeras1.jpg" alt="pav"/>
+                </div>
+            </div>
+            <div class="meniuImg">
+                <span>&times;</span>
+                <img src="images/meniu.jpg" alt="kavos meniu"/>
+            </div>
+            <!--kontaktine informacija-->
+            <div id="kontaktai">
+                <div id="adresasIrtelefonas">
+                    <p>Adresas: Laisvės aikštė 15-18, Panevėžys, LT-35200.</p>
+                    <p>Telefonas: (8-609) 91295</p>
+                    <p>El. paštas: kavos.dezute@gmail.com</p>
+                    <iframe id="zemelapis" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8987.133691877916!2d24.3542672442388!3d55.72751588874437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e632179edd3dd7%3A0xf8f8ca1c65b689b0!2zS2F2b3MgZMSXxb51dMSX!5e0!3m2!1slt!2slt!4v1673544141406!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="darbolaikas">
+                    <ul id="ul1">
+                        <li> Pr:</li>                        
+                        <li> An:</li>                        
+                        <li> Tr:</li>                        
+                        <li> Kt:</li>                        
+                        <li> Pn:</li>                        
+                        <li> Št:</li>                        
+                        <li> Sk:</li>                        
+                    </ul>
+                    <ul id="ul2">
+                        <li> 07:30-18:00</li>                        
+                        <li> 07:30-18:00</li>                        
+                        <li> 07:30-18:00</li>                        
+                        <li> 07:30-18:00</li>                        
+                        <li> 07:30-18:00</li>                        
+                        <li> 10:30-15:00</li>                        
+                        <li> Uždaryta</li>                        
+                    </ul>
+                </div>
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+    <script src="index.js">
+        
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+/*bendri nurodymai*/
+html{
+    scroll-behavior: smooth;
+}
+*{
+    color: white;
+}
+body{
+    background-color: rgba(244, 186, 165, 0.386);
+    font-family: Arial, Verdana, sans-serif;
+}
+/*pagrindine dezute*/
+#mainframe{
+    max-width: 940px;
+    margin: -7px auto;
+    
+    /*background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));*/
+}
+/*headeris, pirma puslapio sekcija*/    
+header{
+    background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+/*korekcijos logotipui*/
+#logo{
+    width: 90px;
+    text-align: center;
+    padding: 0px 20px;
+    position: relative;
+    left: 20px;
+}
+#logo a{
+    text-decoration: none;
+}
+#logo p{
+    font-size: 1.4rem;
+    line-height: 50%;
+    letter-spacing: 0.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+#box{
+    color:rgb(211, 140, 92);
+}
+/*fb, insta ir navigacijos deze*/
+#nav-media{
+    margin : 0;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+}
+/*fb ir insta iconu sekcija*/
+#mediacontainer{
+    text-align: right;
+    margin:10px 25px 0 0;
+    padding: 0;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#mediancontainer img{
+    padding:0;
+    margin:0;
+}
+#mediacontainer img:first-child{
+    padding:0;
+    margin-right: 10px;
+}
+.mediaAnchor{
+    padding:0;
+}
+/*laptopo navigacijos korekcija*/
+nav{
+    padding: 0;
+    margin:0px 25px 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.first-nav{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+.nav-item{
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1rem;
+}
+.nav-item a{
+    padding: 2px 8px;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color:rgb(211, 140, 92);
+}
+.second-nav{
+    display: none;
+}
+/*srifto dydzio mazinimas sumazejus lango dydziui
+@media(max-width: 760px){
+ .nav-item{
+    font-size: 12px;
+}
+}*/
+/*antros navigacijos ir hamburger mygtuko korkecijos*/
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    content:'';
+    height: 3px;
+    width: 25px;
+    margin: 5px 10px 5px auto;
+    background-color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+@media(max-width: 640px){
+        .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        }    
+    .first-nav{
+        display: none;
+    }
+    .nav-mobile{
+        text-align: right;
+    }
+    .hamburger{
+        display:block;
+        width: 100%;
+        top: 18px;
+        z-index:2;
+        position:relative;
+    }
+    .second-nav{
+        display:block;
+        position: relative;
+        background: rgba(37, 18, 2, 0.778);
+        transform: translateY(-120px);
+        opacity: 0;
+        transition: opacity 1ms ease-in-out, transform 150ms ease-in-out;
+        z-index: -1;
+    }
+    .second-nav.active{
+        position: relative;
+        background: rgba(37, 18, 2, 0.778);
+        z-index:1;
+        top: 31px;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+    .nav-item2{
+        height: 25px;
+        width: 200px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 6px;
+    }
+    .nav-item2:hover{
+        background: rgba(37, 18, 2, 0.5);
+    }
+    .nav-item2 a{
+        text-decoration: none;
+    }
+    .nav-item2 a:hover{
+        color:rgb(211, 140, 92);
+    }
+
+}
+/*greeting styling*/
+#greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#greeting img{
+  width: 100%;
+  height: auto; 
+  position: relative;
+  margin: 0;
+  z-index: -2;
+}
+#philosophy{
+    position: absolute;
+}
+#philosophy p{
+    background-color: rgba(37, 18, 2, 0.849);
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2% 0;
+}
+#philosophy p:first-child{
+    letter-spacing: 0.4rem;
+    font-family: 'Oswald', sans-serif;
+}
+#philosophy p:last-child{
+    letter-spacing: 0.12rem;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#aboutUs{
+    background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));
+    width: 100%;
+}
+#aboutUs p:first-child{
+    text-align: center;
+    padding-top: 3%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    color:rgb(211, 140, 92);
+    font-size: 1.5rem;
+}
+#aboutUs p:nth-child(2){
+    text-align: center;
+    margin: 2% 2%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+}
+#aboutUs p:nth-child(3){
+    text-align: right;
+    padding: 0 30px 2% 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color:rgb(211, 140, 92);
+    font-size: 1.1rem;
+}
+hr{
+    width: 90%;
+    height: 0.3vh;
+    background-color: rgb(211, 140, 92);
+    border: none;
+    border-radius: 50px;
+    margin: 0 auto;
+    opacity: 50%;
+    box-shadow: 10px 10px 10px rgb(211, 140, 92);
+}
+.galerija{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0px auto 0px auto;
+    padding-top: 10px;
+    background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));
+}
+.container-img{
+    width: 30%;
+    min-width: 30vh;
+    height:30vh;
+    text-align: center;
+    padding: 2px;
+}
+.container-img img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    transition: 0.2s linear;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px rgba(33, 33, 33, 0.626);
+
+}
+.container-img img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 1px rgba(33, 33, 33, 0.626);
+
+}
+
+#kontaktai{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width: 100%;
+    background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));
+}
+#adresasIrtelefonas{
+    margin: 2% 0 2% 8%;
+}
+#adresasIrtelefonas p{
+    margin: 2% 0;
+    font-size: 1.2rem;
+}
+#zemelapis{
+    width:90%;
+    height: 200px;
+    margin-top: 2%;
+}
+#darbolaikas{
+    margin:1% 15% 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ul2{
+    margin-left: -10%;
+}
+#darbolaikas ul li{
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin-bottom: 1%;
+}
+#ul2 li{
+    font-size: 1.2rem;
+    margin-top: -0.5px;
+}
+/*javascript interaktyvumui*/
+/*padidejanti foto galerija*/
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.816);
+    z-index: 100;
+    display: none;
+}
+.containerForcornerbox{
+    max-width: 940px;
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+.close-button{
+    background-color: rgba(224, 218, 218, 0.592);
+    width: 100px;
+    border-bottom-left-radius: 8px;
+}
+.containerforarrows{
+    width: 100%;
+    max-width: 940px;
+    position: relative;
+    margin: 0 auto;
+    top: 44%;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow{
+    content: "";
+    background-color: white;
+    width: 20px;
+    height: 4px;
+    margin: 2px;
+}
+.arrowleft{
+    z-index: 200;
+    padding: 20px 140px 20px 5px;
+    cursor: pointer;
+}
+.arrowleft1{
+    transform: translateY(8.5px) rotate(40deg);
+    border-top-left-radius: 6px;
+}
+.arrowleft2{
+    transform: translateY(-8.5px) rotate(-40deg);
+    border-bottom-left-radius: 6px;
+}
+.arrowright{
+    z-index: 200;
+    padding: 20px 5px 20px 140px;
+    cursor: pointer;
+}
+.arrowright1{
+    transform: translateY(8.5px) rotate(-40deg);
+    border-top-right-radius: 6px;
+}
+.arrowright2{
+    transform: translateY(-8.5px) rotate(40deg);
+    border-bottom-right-radius: 6px;
+}
+
+.modal span{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 4px;
+    margin-left: 10px;
+}
+.modal-content img{
+    width: 80%;
+    min-width:400px;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+/*nukreipimas i meniu foto*/
+.meniuImg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.816);
+    z-index: 100;
+    display: none;
+    cursor: pointer;
+}
+.meniuImg span{
+    color: white;
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    transform: translate(50%, 50%);
+    z-index: 100;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.meniuImg img {
+    width: 80%;
+    max-width: 900px;
+    min-width:400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+
