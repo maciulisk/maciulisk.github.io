@@ -16,40 +16,46 @@ const arrowRight = document.querySelector(".arrowright");
 var closeButton = document.querySelector(".close-button");
 const body = document.querySelector("body");
 
-
 let currentImageIndex = 0;
 
 images.forEach(function(image) {
   image.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = image.src;
-    body.style.overflow="hidden";
+    body.style.overflow = "hidden";
     currentImageIndex = [...images].indexOf(image);
     closeButton.addEventListener("click", function() {
         modal.style.display = "none";
-  });
-  
+        body.style.overflow = "scroll";
+      });
 })});
+
 menu.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = images[1].src;
     currentImageIndex = 0;
-    body.style.overflow="hidden";
+    body.style.overflow = "hidden";
     closeButton.addEventListener("click", function() {
-      modal.style.display = "none";})
+      modal.style.display = "none";
+      body.style.overflow = "scroll";
+    })
   });
+
 menu2.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = images[1].src;
     currentImageIndex = 0;
-    body.style.overflow="hidden";
+    body.style.overflow = "hidden";
     closeButton.addEventListener("click", function() {
-      modal.style.display = "none";})
-  });  
+      modal.style.display = "none";
+      body.style.overflow = "scroll";
+    })
+  }); 
 
 modal.addEventListener("click", function(e) {
   if (e.target === modal) {
     modal.style.display = "none";
+    body.style.overflow = "scroll";
   }
 });
 
