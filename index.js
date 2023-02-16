@@ -39,6 +39,10 @@ menu.addEventListener("click", function() {
       modal.style.display = "none";
       body.style.overflow = "auto";
     })
+    closeButton.addEventListener("touchstart", function(e) {
+      modal.style.display = "none";
+      body.style.overflow = "auto";
+    })
   });
 
 menu2.addEventListener("click", function() {
@@ -47,6 +51,10 @@ menu2.addEventListener("click", function() {
     currentImageIndex = 0;
     body.style.overflow = "hidden";
     closeButton.addEventListener("click", function() {
+      modal.style.display = "none";
+      body.style.overflow = "auto";
+    })
+    closeButton.addEventListener("touchstart", function(e) {
       modal.style.display = "none";
       body.style.overflow = "auto";
     })
