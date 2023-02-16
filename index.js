@@ -14,7 +14,7 @@ const modalImage = document.querySelector(".modal-content img");
 const arrowLeft = document.querySelector(".arrowleft");
 const arrowRight = document.querySelector(".arrowright");
 var closeButton = document.querySelector(".close-button");
-
+const body = document.querySelector("body");
 
 
 let currentImageIndex = 0;
@@ -23,6 +23,7 @@ images.forEach(function(image) {
   image.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = image.src;
+    body.style.overflow="hidden";
     currentImageIndex = [...images].indexOf(image);
     closeButton.addEventListener("click", function() {
         modal.style.display = "none";
@@ -33,6 +34,7 @@ menu.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = images[1].src;
     currentImageIndex = 0;
+    body.style.overflow="hidden";
     closeButton.addEventListener("click", function() {
       modal.style.display = "none";})
   });
@@ -40,6 +42,7 @@ menu2.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = images[1].src;
     currentImageIndex = 0;
+    body.style.overflow="hidden";
     closeButton.addEventListener("click", function() {
       modal.style.display = "none";})
   });  
