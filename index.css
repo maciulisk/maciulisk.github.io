@@ -217,7 +217,6 @@ nav{
     padding: 8px 12px;
     text-align: center;
     margin: 2% 0;
-    width: 100%;
 }
 #philosophy p:first-child{
     letter-spacing: 0.4rem;
@@ -229,15 +228,15 @@ nav{
     font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
-@media(max-width:500px){
+@media(max-width:600px){
     #philosophy p:first-child{
         letter-spacing: 0.4rem;
-        font-size: 3.5vw;
+        font-size: 3.1vw;
         font-family: 'Oswald', sans-serif;
     }
     #philosophy p:last-child{
         letter-spacing: 0.12rem;
-        font-size: 3.6vw;
+        font-size: 3.5vw;
         font-family: 'Source Sans Pro', sans-serif;
     }       
 }
