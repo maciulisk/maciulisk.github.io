@@ -12,12 +12,13 @@ html{
 body{
     background-color: rgba(244, 186, 165, 0.386);
     font-family: Arial, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 /*pagrindine dezute*/
 #mainframe{
     max-width: 940px;
-    margin: -7px auto;
-    
+    margin: 0px auto;
     /*background: linear-gradient(to right, rgb(122, 103, 87), 20%, rgb(37, 18, 2));*/
 }
 /*headeris, pirma puslapio sekcija*/    
@@ -259,7 +260,6 @@ hr{
     border-radius: 50px;
     margin: 0 auto;
     opacity: 50%;
-    box-shadow: 10px 10px 10px rgb(211, 140, 92);
 }
 .galerija{
     display: flex;
@@ -332,6 +332,7 @@ hr{
 }
 /*javascript interaktyvumui*/
 /*padidejanti foto galerija*/
+
 .modal{
     position: fixed;
     width: 100%;
@@ -374,6 +375,9 @@ hr{
     z-index: 200;
     padding: 20px 140px 20px 5px;
     cursor: pointer;
+}
+.arrowleft:active, .arrowright:active{
+    background-color:transparent;
 }
 .arrowleft1{
     transform: translateY(8.5px) rotate(40deg);

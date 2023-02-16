@@ -1,6 +1,7 @@
 //const allImages=document.querySelectorAll('.modal-content img')
 //const modal=document.querySelector('.modal')
-const menu=document.getElementById('menu')
+const menu=document.querySelector('.musuKava')
+const menu2=document.querySelector('.musuKava2')
 const meniuImg=document.querySelector('.meniuImg')
 const hamburger=document.querySelector('.hamburger')
 const secondNav=document.querySelector('.second-nav')
@@ -32,7 +33,16 @@ menu.addEventListener("click", function() {
     modal.style.display = "block";
     modalImage.src = images[1].src;
     currentImageIndex = 0;
+    closeButton.addEventListener("click", function() {
+      modal.style.display = "none";})
   });
+menu2.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImage.src = images[1].src;
+    currentImageIndex = 0;
+    closeButton.addEventListener("click", function() {
+      modal.style.display = "none";})
+  });  
 
 modal.addEventListener("click", function(e) {
   if (e.target === modal) {
