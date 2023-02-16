@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
 /*bendri nurodymai*/
-/*html{
+html{
     scroll-behavior: smooth;
-}*/
+}
 *{
     color: white;
 }
@@ -47,8 +47,7 @@ header{
     line-height: 50%;
     letter-spacing: 0.2rem;
     font-family: 'Oswald', sans-serif;
-    -webkit-tap-highlight-color: transparent !important;
-    outline: none !important;
+    cursor: default;
 }
 #box{
     color:rgb(211, 140, 92);
@@ -232,7 +231,7 @@ nav{
 }
 @media(max-width:600px){
     #philosophy p:first-child{
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.3rem;
         font-size: 2.9vw;
         font-family: 'Oswald', sans-serif;
     }
@@ -385,7 +384,7 @@ hr{
 .arrowleft{
     height: 40px;
     z-index: 200;
-    cursor: pointer;
+    cursor: default;
     width: 50px;
     display: flex;
     justify-content: right;
@@ -394,7 +393,7 @@ hr{
 .arrowright{
     height: 40px;
     z-index: 200;
-    cursor: pointer;
+    cursor: default;
     width: 50px;
     display: flex;
     background-color: rgba(55, 53, 53, 0.592);
