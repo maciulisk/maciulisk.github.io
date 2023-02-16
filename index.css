@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
 /*bendri nurodymai*/
-html{
+/*html{
     scroll-behavior: smooth;
-}
+}*/
 *{
     color: white;
 }
@@ -47,6 +47,8 @@ header{
     line-height: 50%;
     letter-spacing: 0.2rem;
     font-family: 'Oswald', sans-serif;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
 }
 #box{
     color:rgb(211, 140, 92);
@@ -372,22 +374,26 @@ hr{
 .containerforarrows{
     width: 100%;
     max-width: 940px;
+    height: 100%;
     position: relative;
     margin: 0 auto;
-    top: 43%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    transform: translateY(-28px);
+    z-index: 200;
 }
 .arrowleft{
+    height: 40px;
     z-index: 200;
     cursor: pointer;
     width: 50px;
     display: flex;
     justify-content: right;
     background-color: rgba(224, 218, 218, 0.592);
-
 }
 .arrowright{
+    height: 40px;
     z-index: 200;
     cursor: pointer;
     width: 50px;
