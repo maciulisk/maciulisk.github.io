@@ -26,7 +26,7 @@ images.forEach(function(image) {
     currentImageIndex = [...images].indexOf(image);
     closeButton.addEventListener("click", function() {
         modal.style.display = "none";
-        body.style.overflow = "scroll";
+        body.style.overflow = "auto";
       });
 })});
 
@@ -37,7 +37,7 @@ menu.addEventListener("click", function() {
     body.style.overflow = "hidden";
     closeButton.addEventListener("click", function() {
       modal.style.display = "none";
-      body.style.overflow = "scroll";
+      body.style.overflow = "auto";
     })
   });
 
@@ -48,14 +48,14 @@ menu2.addEventListener("click", function() {
     body.style.overflow = "hidden";
     closeButton.addEventListener("click", function() {
       modal.style.display = "none";
-      body.style.overflow = "scroll";
+      body.style.overflow = "auto";
     })
   }); 
 
 modal.addEventListener("click", function(e) {
   if (e.target === modal) {
     modal.style.display = "none";
-    body.style.overflow = "scroll";
+    body.style.overflow = "auto";
   }
 });
 
